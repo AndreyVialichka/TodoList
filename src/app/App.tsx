@@ -31,7 +31,8 @@ function App({demo = false}: PropsType) {
     const dispatch = useDispatch()
 
     useEffect(() => {
-         [])
+        dispatch(initializeAppTC())
+    }, [])
 
     const logoutHandler = useCallback(() => {
         dispatch(logOutTC())
